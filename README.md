@@ -1,48 +1,101 @@
-# VaakCare - AI Patient Monitoring Platform
+# VaakCare - AI Voice Patient Monitoring Platform
 
-A complete, polished hackathon-winning full-stack application.
+AI-powered voice agents for post-discharge patient monitoring in India.
+
+**Tagline:** Every Patient. Every Language. Every Day.
+
+---
+
+## Problem
+
+Post-discharge care in India is broken:
+
+- Most patients receive **no follow-up after leaving hospitals**
+- Medication adherence drops drastically within weeks
+- Rural patients face **language and accessibility barriers**
+- Hospitals lack scalable monitoring systems
+
+---
+
+## Solution
+
+VaakCare automates patient monitoring using AI:
+
+**Call → Understand → Predict → Alert**
+
+- AI voice calls patients daily in their **native language**
+- Detects **symptoms, emotional distress, and risk**
+- Predicts critical cases early
+- Instantly alerts **doctors and guardians**
+
+---
+
+## Key Features
+
+- **AI Voice Calls**  
+  Automated daily conversations in 10+ Indic languages  
+
+- **Symptom & Emotion Detection**  
+  Real-time NLP + voice tone analysis  
+
+- **Risk Prediction Engine**  
+  Flags high-risk patients early  
+
+- **Alert System**  
+  Instant SMS & dashboard alerts  
+
+- **Doctor Dashboard**  
+  Live patient insights, risk scores, history  
+
+---
 
 ## Tech Stack
-- **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Recharts, Zustand.
-- **Backend**: Node.js, Express, MongoDB, Socket.io, JWT.
-- **AI**: OpenRouter (OpenAI models).
 
-## Features
-- Real-time Patient-Doctor communication & alerts via Socket.io.
-- AI-driven patient transcript analysis (symptoms, emotional tone, risk analysis).
-- Beautiful SaaS-grade Glassmorphic UI with animated transitions.
-- Interactive Analytics & Risk trend graphing using Recharts.
+**Frontend**
+- React.js
+- Tailwind CSS
+- Framer Motion
 
-## Setup Instructions
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- WebSockets
 
-### 1. Backend Setup
-```bash
-cd server
-npm install
+**AI**
+- GPT API
+- Speech-to-Text + NLP processing
 
-# Copy .env.example to .env and fill in your keys (OPENROUTER_API_KEY, MONGO_URI)
-cp .env.example .env
+**Communication**
+- Twilio (SMS & Calls)
 
-# Seed the database with demo users (4 doctors, 4 patients, dummy logs)
-node seed.js
+---
 
-# Start backend
-npm run dev
-```
+## How It Works
 
-### 2. Frontend Setup
-```bash
-cd client
-npm install
+1. Patient receives AI voice call  
+2. System captures responses  
+3. AI analyzes symptoms + tone  
+4. Risk score is generated  
+5. Alerts sent if risk is high  
+6. Doctor monitors via dashboard  
 
-# Start frontend
-npm run dev
-```
+---
 
-### 3. Usage (Demo Mode)
-1. Go to the Landing Page.
-2. Click **Doctor Dashboard**. You can use the "Use Demo Doctor" button to login as Dr. Sharma (`DOC001`).
-3. Open a **new incognito tab** and go to **Patient Portal**. Use the "Use Demo Patient" button to login as Ramesh Kumar.
-4. From the Patient Dashboard, send a message like "I am having severe chest pain right now."
-5. See the real-time AI processing.
-6. Look at the Doctor's tab: A global red alert will pop up instantly, the risk badge will update to `HIGH`, and the SMS log will appear in the server console!
+## Demo
+
+- Patient interaction via voice/chat  
+- Real-time AI risk detection  
+- Instant alert to doctor dashboard  
+- SMS alert triggered for critical cases  
+
+---
+
+## Impact
+
+- Scalable to **millions of patients**
+- Reduces hospital readmissions
+- Works across **multiple Indian languages**
+- Requires **zero additional hospital staff**
+
+
